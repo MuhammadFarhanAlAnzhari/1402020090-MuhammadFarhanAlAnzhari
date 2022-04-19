@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tokopedia Farhan</title>
+        <!-- external css-->
+        <link rel="stylesheet" href="../css/styles.css" />
+        <!-- grid -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> 
+        <!-- icon -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        
+        <!-- Scrip Carausel -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+        
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row mini-header">
+                <div class="col-sm-2">
+                    <img class="mini-icon" src="../icon/mobile-screen-button-solid.svg">
+                    <a class="mini-header" href="https://www.tokopedia.com/mobile-apps/">Download Tokopedia App</a>
+                </div>
+                <div class="col-sm-5">
+                </div>
+                <div class="col-sm-5 position-right">
+                    <a class="mini-header" href="">Tentang Tokopedia</a>
+                    <a class="mini-header" href="">Mitra Tokopedia</a>
+                    <a class="mini-header" href="">Mulai Berjualan</a>
+                    <a class="mini-header" href="">Promo</a>
+                    <a class="mini-header" href="">Tokopedia Care</a>
+                </div>
+            </div>
+            <div class="row medium-header">
+                <img class="logo" src="../img/logo-tokped.svg">
+                <a class="medium-header" href="">Kategori</a>
+                <input type="text" class="search" placeholder="Cari disini">
+                <img class="medium-icon" src="../icon/cart-shopping-solid.svg">
+                <button class="medium-header">Masuk</button>
+                <button class="medium-header-fill">Daftar</button>
+            </div>
+        </div>
+        <div class="container">
+            
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin: 0px 30px 0px 30px; ">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+        
+              <div class="item active">
+                <img src="../img/c1.jpg" alt="Los Angeles" class="imageslider" style="width:100%;">
+              </div>
+              <div class="item">
+                <img src="../img/c2.jpg" alt="Chicago" class="imageslider" style="width:100%;">
+              </div>
+            </div>
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+        <div class="row content">
+            <div class="col-sm-6" style="margin: 5px;">
+                <h3 style="padding-bottom: 15px;"><b>Kategori Pilihan</b></h3>
+                <div class="row">
+                    <div class="col-sm-3 content">
+                        <img src="../img/toy.jpg" width="100%">
+                    </div>
+                    <div class="col-sm-3 content">
+                        <img src="../img/bag.jpg" width="100%">
+                    </div>
+                    <div class="col-sm-3 content">
+                        <img src="../img/food.jpg" width="100%">
+                    </div>
+                    <div class="col-sm-3 content">
+                        <img src="../img/shoes.jpg" width="100%">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5" style="margin: 5px;">
+                <h3 style="padding-bottom: 15px;"><b>Top Up & Tagihan</b> <span style="font-size: 16px; color: #03ac0e;">Lihat Semua</span></h3>
+                <div  class="tambahan" >
+                <div class="row" style="text-align: center;">
+                    <div class="col-sm-3 content-nav" id="pulsa">
+                        Pulsa
+                    </div>
+                    <div class="col-sm-3 content-nav" id="paket">
+                        Paket Data
+                    </div>
+                    <div class="col-sm-3 content-nav">
+                        Listrik PLN
+                    </div>
+                    <div class="col-sm-3 content-nav">
+                        Flight
+                    </div>
+                </div>
+                <div class="row" style="flex: 1 1 auto;">
+                    <div class="col-sm-5">
+                        <label for="">
+                            Nomor Telpon
+                        </label>
+                        <input type="text" class="pulsa" placeholder="0812345678" id="noHp">
+                    </div>
+                    <div class="col-sm-5">
+                        <label for="">
+                            Nominal
+                        </label>
+                        <select id="nominal" class="pulsa"  disabled>
+                            <option value="0">Pilih</option>
+                            <option value="1">1000</option>
+                            <option value="2">3000</option>
+                            <option value="3">5000</option>
+                            <option value="4">10000</option>
+                            <option value="5">20000</option>
+                            <option value="6">25000</option>
+                            <option value="7">50000</option>
+                            <option value="8">100000</option>
+                        </select>
+                        <select id="nominalPkt" class="pulsa" disabled hidden>
+                            <option value="0">Pilih</option>
+                            <option value="1">Internet 10 GB - Rp. 30.500</option>
+                            <option value="2">Internet 15 GB - Rp. 43.000</option>
+                            <option value="3">Internet Combo Unlimited (Kuota Malam) - Rp. 20.000</option>
+                            <option value="4">Internet Combo Unlimited - Rp. 70.000</option>
+                        </select>
+                </div>
+<!-- Button -->
+                <div class="col-sm-2" style="margin-top: 25px;">
+                    <button class="medium-header-fill-grey" disabled id="griy">Beli</button>
+                    <button class="medium-header-fill-green" hidden id="buttonpulsa">Beli</button>
+                    <button class="medium-header-fill-green" hidden id="buttonpaket">Beli</button>
+
+                </div>
+
+                <body>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+$(document).ready(function(){
+    $("#noHp").on('change', function(){
+        if ($("#noHp").val() > 0) {
+            $("#nominal").prop("disabled", false);
+            $("#nominalPkt").prop("disabled", false);
+            // alert("Nomor telepon adalah " + $("#noHp").val())
+            }
+            console.log($("#noHp"), fall())
+});
+$("#nominal").change(function(){
+    $("#griy").hide();
+    $("#buttonpaket").hide();
+    $("#buttonpulsa").show();
+                            
+});
+$("#pulsa").on('click', function(){
+    $("#nominal").show();
+    $("#nominalPkt").hide();
+    });
+
+$("#nominalPkt").change(function(){
+    $("#griy").hide();
+    $("#buttonpaket").show();
+    $("#buttonpulsa").hide();
+                            
+});
+$("#paket").on('click', function(){
+    $("#nominal").hide();
+    $("#nominalPkt").show();
+});
+
+$("#buttonpulsa").on('click', function(){
+    var nilai = $("#nominal").find('option').filter(':selected').text();
+    var hasil = parseInt(nilai);
+
+                            if ($("#nominal").val() >= 4) {
+                                hasil = hasil + 2000;
+
+                                if(confirm("Pembelian pulsa sebesar " + nilai + " ke nomor " + $("#noHp").val())){
+                                    alert("Total harga pulsa Rp. " + hasil + ",- ke nomor " + $("#noHp").val() + " sedang di proses. Terima Kasih:)")
+                                } else {
+                                    alert("pembelian pulsa Rp. " + nilai + ",- ke nomor " + $("#noHp").val() + " dibatalkan!")
+                                }
+                                //confirm("Pembelian pulsa sebesar " + hasil + " ke nomor " + $("#noHp").val())
+                            } else {
+                                hasil = hasil + 3000;
+                                if(confirm("Pembelian pulsa sebesar " + nilai + " ke nomor " + $("#noHp").val())){
+                                    alert("Total harga pulsa Rp. " + hasil + ",- ke nomor " + $("#noHp").val() + " sedang di proses. Terima Kasih:)")
+                                } else {
+                                    alert("pembelian pulsa Rp. " + nilai + ",- ke nomor " + $("#noHp").val() + " dibatalkan!")
+                                }
+
+                            }
+                        });
+                        
+$("#buttonpaket").click(function() {
+         const pilihan = $("#nominal").children("option:selected").text();
+         const pilihan2 = $("#nominalPkt").children("option:selected").text();
+         var jumlah = pilihan.substring(4); 
+         var hasil = "";
+
+        if (pilihan2 != "Pilih") {
+            var totalKuota = pilihan2.substring(pilihan2.length - 10);
+            let valKuota = confirm("Pembelian paket data " + pilihan2 + " ke nomor " + $("#noHp").val()+ " sedang di proses. Terima Kasih :)");
+            if (valKuota) {
+                alert("Total harga paket data " + totalKuota + ",- ke nomor " + $("#noHp").val());
+            } else {
+
+            }
+        }
+    });
+});
+</script>
+    <html>
+        <body>
+            <div class="col-sm-12" style="margin: 5px;">
+                <div class="row">
+                    <div class="col-sm-2">
+                    <a href="https://www.tokopedia.com/p?nref=chead" class="kategory-bawah" tabindex="0" role="button">
+                            <img src="https://images.tokopedia.net/img/cache/100-square/iEWsxH/2021/10/5/461aa510-5537-41b7-92d4-684d39c9930e.png" alt="icon-Kategori"/><span>Kategori</span></a>
+                        
+                    </div>
+                    <div class="col-sm-2 ">
+                        <a href="https://www.tokopedia.com/p?nref=chead" class="kategory-bawah" tabindex="0" role="button">
+                            <img src="https://images.tokopedia.net/img/cache/100-square/iEWsxH/2021/10/5/a809e96e-3c18-4e63-ac83-8deb9b4c1b1c.png" alt="icon-Handphone"/><span>Handphone & Tablet</span></a>
+                    </div>
+                    <div class="col-sm-2 ">
+                        <a href="https://www.tokopedia.com/p?nref=chead" class="kategory-bawah" tabindex="0" role="button">
+                            <img src="https://images.tokopedia.net/img/cache/100-square/iEWsxH/2021/10/5/75f2fb8a-a4ca-4cd6-a166-7279daef1d5b.png" alt="icon-Top-Up"/><span>Top-Up & Tagihan</span></a>
+                    </div>
+                    <div class="col-sm-2 ">
+                        <a href="https://www.tokopedia.com/p?nref=chead" class="kategory-bawah" tabindex="0" role="button">
+                            <img src="https://images.tokopedia.net/img/cache/100-square/iEWsxH/2021/10/6/b5af3e8e-bc2e-48b4-8d00-6d49ec8f4d50.png" alt="icon-Travel"/><span>Travel & Entertainment</span></a>
+                    </div>
+                    <div class="col-sm-2 ">
+                        <a href="https://www.tokopedia.com/p?nref=chead" class="kategory-bawah" tabindex="0" role="button">
+                            <img src="https://images.tokopedia.net/img/cache/100-square/iEWsxH/2021/10/6/65d13c55-c5c6-4ece-b957-99912c3f8f3c.png" alt="icon-PerawatanHewan"/><span>Perawatan Hewan</span></a>
+                    </div>
+                    <div class="col-sm-2 ">
+                        <a href="https://www.tokopedia.com/p?nref=chead" class="kategory-bawah" tabindex="0" role="button">
+                            <img src="https://images.tokopedia.net/img/cache/100-square/iEWsxH/2021/10/6/b5a8add5-ed3f-400b-8f98-f484d22af153.png" alt="icon-Keuangan"/><span>Keuangan</span></a>
+                    </div>
+                </div>
+        </div>
+    </body>
+</html>
